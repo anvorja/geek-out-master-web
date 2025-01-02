@@ -74,6 +74,8 @@ export default function Home() {
                     onDiceClick={handleDiceAction}
                     onNewGame={startNewGame}
                     onShowHelp={() => setShowHelp(true)}
+                    selectedDice={gameState.selectedDice} // new
+                    waitingForTarget={gameState.waitingForTarget} // new
                 />
 
                 <HelpCard
